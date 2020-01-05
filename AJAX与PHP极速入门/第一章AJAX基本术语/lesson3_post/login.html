@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登陆post</title>
+</head>
+<body>
+    <div align="center">
+        <h3>用户登陆</h3>
+        <form action="check.php" method="POST">
+            <p>账号：<input type="text" name="name" id="name"></p>
+            <p>密码：<input type="password" name="password" id="password"></p>
+            <p><input type="submit"  id="submit" value="提交"></p>
+            <p id="tips"></p>
+        </form>
+    </div>
+</body>
+    <script>
+        var submit=document.getElementById('submit');            //获取提交按钮
+        submit.onclick=function()
+        {
+            // 1. 创建AJAX对象；
+            var xhr=new XMLHttpRequest();
+            // 2. 创建请求事件的监听
+            xhr.onreadystatechange=function()
+            {
+                if(xhr.readyState==4 && xhr.status == 200)
+                {
+                    console.log(typeof xhr.responseText);
+                    //解析返回的json字符串
+                    var json=JSON.parse(xhr.responseText);
+                    var tips=document.getElementById('tips')
+                    tips.innerHTML='欢迎用户'+json.name+'再次归来';
+                }
+            }
+
+            // 3. 初始化一个请求：执行xhr的open()方法
+            var user=document.getElementById('name').value;
+            var password=document.getElementById('password').value;
+            var data='name='+user+'&password='+password; //生成post请求数据
+            var url='check.php';      //生成url地址
+            xhr.open('post',url,true);     //请求类型为get，交互方式为异步；
+           
+            //设置请求头
+            xhr.setRequestHeader('content-type','application/x-www.form-urlencoded')                //在open和send之间建立请求头
+            // 5. 发送url请求
+            xhr.send(data);
+            return false;   //禁止提交按钮的默认行为
+
+            // 5. 发送请求：send()
+           
+        }
+
+    </script>
+</html>

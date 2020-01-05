@@ -1,0 +1,10 @@
+var xhr=new XMLHttpRequest();  //创建ajax对象
+xhr.onreadystatechange=function(){    //检测请求状态的变化
+//如果请求完成并成功返回数据
+if(this.readyState==4&&this.status==200){
+    document.getElementById('res').innerHTML=xhr.responseText;
+ }
+} 
+ xhr.open('get','text.txt',true)    //true异步
+ xhr.send(null);     //不带任何参数，有的浏览器依赖参数null
+ 
