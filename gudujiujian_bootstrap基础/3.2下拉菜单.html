@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 1.引入bootstrap的css样式表文件 -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- 2.引入bootstrap依赖的jQuery文件 -->
+    <script src="jquery.min.js"></script>
+    <!-- 3.引入bootstrap的脚本文件 -->
+    <script src="bootstrap.min.js"></script>
+    <title>3-2下拉菜单</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" 
+                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    新闻动态
+                    <span class="caret"></span>    
+                   </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">国内新闻</a></li>
+                        <li><a href="#">国际新闻</a></li>
+                        <li><a href="#">行业动态</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li call="disable"><a hre="#">公司新闻</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="dropup">
+                    <button class="btn btn-success dropdown-toggle" type="button" 
+                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    公司产品
+                    <span class="caret"></span>    
+                   </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><a href="#">笔记本电脑</a></li>
+                        <li><a href="#">手机级配件</a></li>
+                        <li><a href="#">智能设备</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li ><a hre="#">音影娱乐</a></li>
+                    </ul>
+                </div>        
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+</html>
+<!-- (li>a[href="#"])*3 -->
