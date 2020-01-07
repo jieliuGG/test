@@ -1,0 +1,37 @@
+<!DOCTYPE html>  		
+    <html>					
+    <head>	
+        <meta charset="utf-8"> 	
+        <link rel="icon" type="image/icon-x" href="房子.png">			
+        <title>css中选择器的分组与继承</title>	
+        <style type="text/css">
+
+        *是css中的通配符，所有的标签都有的属性，表示所有标签都遵循的同一样式；
+        *{margin: 0px;padding: 0px;}
+
+        标记选择器 body
+        body{background: url(images/3.jpg) no-repeat right top;color: green;font-weight: 楷体;}
+       h1,h2,p,span{color: crimson;}
+        /* id选择器可以为标有特定 id的html元素指定也定的样式 id选择器以“#”来定义唯一性 */
+       #box{font-weight: bold;color: greenyellow;}
+       
+       /* class选择器：用于描述一组元素的样式；class选择器有别于id选择器，class可以在多个元素中使用；class以”.”来定义 */
+       .list{color: blue;}
+        </style>
+          
+    </head>					
+    <body>
+       <h1>被分组的选择器就可以分享相同的声明</h1>
+       <h2 id="box">被分组的选择器就可以分享相同的声明</h2>
+       <p >被分组的选择器就可以分享相同的声明</p>
+       <p2>被分组的选择器就可以分享相同的声明</p2>
+       <span>我是liujie</span>
+       <ul>
+           <li class="list">苹果</li>
+           <li>苹果</li>
+           <li class="list">苹果</li>
+           <li class="list">苹果</li>
+
+       </ul>
+    </body>					
+    </html> 	

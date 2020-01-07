@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过渡属性transition</title>
+    <style type="text/css">
+    p{width: 200px;height: 200px;background: #fff650;}
+    p{width: 200px;height: 200px;background-color: blue;
+    transition: width,margin-top,bacckgroun 5s;}
+    p:hover{width: 500px;margin-top: 50px;background: cornflowerblue;}
+    
+/*
+过渡性属性： transition 
+是一个简写属性，用于在一个属性中设置四个过渡属性；transition
+1. 过渡的css属性名称   //所有属性都获得过渡效果
+2.过段时间             //注意：始终设置过渡时间，否则时长为0，不会产生过渡效果；
+3. 过渡效果的时间曲线
+liner                  //相同速度 
+ease                   //开始慢，变快，结束慢
+过渡效果如何开始         //过渡效果开始之前需要等的时间（以秒或毫秒计）
+ */
+    </style>
+</head>
+<body>
+    <p>过渡属性transition</p>
+</body>
+</html>

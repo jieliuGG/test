@@ -1,0 +1,41 @@
+<!DOCTYPE html>  		
+<html>					
+<head>	
+    <meta charset="utf-8"> 	
+    <link rel="icon" type="image/icon-x" href="房子.png">			
+    <title>css中选择器的分组与继承</title>	
+    <style type="text/css">
+    *{margin: 0px;padding: 0px;}
+    body{background: url(images/3.jpg) no-repeat right top;color: green;font-weight: 楷体;}
+   /* hover选择器用于鼠标指针浮动在上面的元素； */
+   ul li{list-style: none;width: 100px;height: 40px;float: left;background: #ccc;
+   margin-right: 5px;text-align: center; line-height: 40px;}
+   li:hover{color: chartreuse;background: darkblue;}
+   /* 元素框隐藏     display：none； */
+   li ul{display: none;}
+   li:hover ul{display: block;}
+    </style>
+      
+</head>					
+<body>
+
+   
+    <ul>
+    <li>苹果
+        <ul>
+        <li>HOVER选择器</li>
+        <li>HOVER选择器</li>
+        <li>HOVER选择器</li>
+        <li>HOVER选择器</li>
+        </ul>
+    
+    </li>
+    <li>display</li>
+    <li>display</li>
+    <li>display</li>
+    <li>display</li>
+    
+    
+    </ul>
+</body>					
+</html> 	

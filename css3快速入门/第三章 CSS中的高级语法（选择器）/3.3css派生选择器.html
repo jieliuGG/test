@@ -1,0 +1,46 @@
+<!DOCTYPE html>  		
+<html>					
+<head>	
+    <meta charset="utf-8"> 	
+    <link rel="icon" type="image/icon-x" href="房子.png">			
+    <title>css中选择器的分组与继承</title>	
+    <style type="text/css">
+    *{margin: 0px;padding: 0px;}
+    body{background: url(images/3.jpg) no-repeat right top;font-family: 楷体;}
+   派生选择器：通过根据元素在其位置的上下文关系来定义样式，你可以使标记更加简洁
+   css 后代选择器
+   div span{font-weight: bold;font-size: 30px;}
+   p span{color: cadetblue;font-weight: bold;}
+   div span i{color: red;}
+
+   子元素选择器  使用大于号（子结合符）
+   div>span{color: seagreen;}
+   div>i{color: yellow;}
+
+   /* 相邻兄弟选择器使用加号+ */
+   h1+h2{color: pink;}
+   h3+h4{color: pink;}
+    </style>
+      
+</head>					
+<body>
+    <div>
+        <span><i>css</i>中派生选择器</span>
+        <i>子元素选择器</i>
+    </div>
+   <P>
+      <span><i>css</i>zhon pai sheng xuan zhe qi</span> 
+   </P>
+
+   <div>
+       <h1>相邻兄弟选择器</h1>
+       <h2>相邻兄弟选择器</h2>
+   </div>
+
+   <div>
+    <h3>相邻兄弟选择器</h3>
+   
+</div>
+     <h4>相邻兄弟选择器</h4>
+</body>					
+</html> 	
