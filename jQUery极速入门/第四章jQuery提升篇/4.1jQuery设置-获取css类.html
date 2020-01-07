@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>获取css类</title>
+    <script type="text/JavaScript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    //jQuery获取并设置css类；
+    //css()设置或返回样式属性；
+    //返回语法： css("样式名")
+    console.log($('p').css("height"))
+    //设置css属性：css("样式名","value")
+    $('b').css('color','#fff')
+
+    //设置多个css属性：css({"样式名":"value","样式名":"value",...})
+    $('b').css({'color':'#fff',"font-size":"20px"})
+   
+    //addClass()向被选元素添加一个或多个类
+    $('b').addClass('text')         //添加类时不用加点号.
+   
+    //removeClass()      从被选元素删除一个或多个类；
+    $('p').click(function(){
+        $('b').removeClass('text')
+    })
+
+    //hasClass()检查被选元素是否包含指定的class；
+    console.log($('b').hasClass('text'))
+
+    })
+    </script>
+    <style type="text/css">
+    *{margin:0;padding: 0;}
+    p{width: 200px;height: 200px;line-height: 200px;background: #9BF25A;margin: auto;text-align: center;}
+    .text{text-shadow:1px 3px #465a39}
+    </style>
+</head>
+<body>
+    <div>
+    <p>
+        <b>css类的获取</b>
+    </p>
+</div>
+</body>
+</html>

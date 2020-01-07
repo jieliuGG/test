@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>获取css类</title>
+    <script type="text/JavaScript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        //text()设置或返回所选元素的文本内容
+        console.log($('p').text())
+        $('p').mouseover(function(){
+            $(this).text('liu  jie')
+        }
+        )
+
+    })
+    </script>
+    <style type="text/css">
+    *{margin:0;padding: 0;}
+    p{width: 200px;height: 200px;line-height: 200px;background: #9BF25A;margin: auto;text-align: center;}
+    .text{text-shadow:1px 3px #465a39}
+    </style>
+</head>
+<body>
+    <div>
+    <p>
+        <b>jQuery获取元素内容
+        
+        </b>
+    </p>
+</div>
+</body>
+</html>

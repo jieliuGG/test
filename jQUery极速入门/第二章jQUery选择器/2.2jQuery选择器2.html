@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery选择器2</title>
+    <script type="text/javascript" scr="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        //$('父级元素> 子级元素') 
+    $('p>a').css('color','red')
+        //$('祖先元素 后代元素') 
+    $('p a').css('color','red')
+    //顺序选择器
+    //$(':firs'）第一个元素
+    $('li:first').css('border','1px solid pink')
+    // $(':last')最后一个元素
+    $('li:last').css('border','1px solid pink')
+    //  $(':get(x)')表示大于x的值      从0开始
+    $('li:get(5)').css('border','1px solid green')
+       //  $(':lt(x)')表示小于x的值
+    $('li:lt(1)').css('border','1px solid blue')
+    // $(':eq(x)')表示等于值x的元素
+    $('li:eq(3)').css('border','1px solid red')
+    
+
+
+})
+</script>
+<style type="text/javascript">
+*{margin:0;padding:0;}
+p,li{background:#f5f5f5;line-height:40px;text-align:center;margin-top:10px;}
+</style>
+</head>
+<body>
+   <p><a href="#">第一层</a>  <a href="#">第一层</a> <b><a href="#">第二层</a></b></p> 
+   <ul>
+       <li>2</li>
+       <li>4</li>
+       <li>6</li>
+       <li>8</li>
+       <li>10</li>
+       <li>12</li>
+       <li>14</li>
+   </ul>
+</body>
+</html>

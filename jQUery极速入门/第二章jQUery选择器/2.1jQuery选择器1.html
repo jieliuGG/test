@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery第一课</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    
+    $(function(){
+        //元素选择器
+        $('body').css('background','pink')
+
+        //#id选择器
+        $('#box').css('background','#ffc')
+
+        //.class选择器
+        $('.box').css('background','#ccc')
+        // 匹配到页面中多个选择器
+        $('#box,.box').css('border','1px solid red')
+        //类型选择器
+        $('li.int').css('background','blue')
+        //属性选择器
+        $('[href]').css('color','#ccf')
+        //属性值选择器
+        $("a[target='_blank']").css('color','green')
+    })  
+</script> 
+
+   <!-- //类型选择器 -->
+ 
+  <style type="text/css">
+    ul li{height:40px;list-style: none;text-align: center;background: red;margin-top:20px;} 
+</style>
+</head>
+<body>
+<div id="box" style="height: 100px;"></div>
+<div class="box" style="height: 100px;"></div>
+<ul>
+
+    <!-- <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li> -->
+    
+    <!-- <li>1</li>
+    <li class="int">2</li>
+    <li>3</li>
+    <li class="int">4</li> -->
+<!-- 
+    <li ><a href="">1</a></li>
+    <li class="int"><a href="">2</a></li>
+    <li><a href="">3</a></li >
+    <li class="int"><a href="">4</a></li>   //属性选择器 -->
+
+    <li ><a href="" target="_blank">1</a></li>     <!-- //属性值 -->
+    <li class="int"><a href="">2</a></li>
+    <li><a href="">3</a></li >
+    <li class="int"><a href="">4</a></li>
+
+
+
+
+
+</ul>
+</body>
+</html>

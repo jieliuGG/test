@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>jQuery遍历</title>
+    <script type="text/JavaScript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    // // parent()  返回被选元素的直接父元素；
+    // // $('b').parent().css('border','1px  solid red')
+    
+    // //parents()   返回被选元素的的所有父元素；
+    // $('b').parents().css('border','1px  solid blue')
+
+    // //parents('div')  使用可选参数来过滤对祖先元素的搜索；
+    // $('b').parents('div').css('border','1px  solid green')
+
+
+    //向下查找子元素
+    $('div').children().css('border','1px solid block')
+
+    //可过滤
+    $('div').children('a').css('border','1px solid blue')
+
+    //find('标签')返回被选元素的后代元素
+    $('div').find('b').css('border','1px solid #ccc')
+
+    //同级查找
+    //siblings()                返回被选元素的所有同胞元素
+    $('a').siblings().css('border','1px solid yellow')
+    //可过滤
+    $('a').siblings('span').css('border','1px solid yellow')
+    
+  
+
+    })
+    </script>
+    <style type="text/css">
+    *{margin:0;padding: 0;}
+    div,p{border:1px solid #ccc;margin:20px auto;text-align: center;}
+    div{width: 500px;height: 500px;}
+    p{width: 200px;height: 200px;line-height: 200px;}
+    </style>
+</head>
+<body>
+    <div>
+        <a href="">jQuery遍历2</a>
+    <p>
+        <b>jQuery遍历1 <span>jie  jie</span><span>gild   bod</span></b>
+    </p>
+        <span>jie  jie</span>
+</div>
+</body>
+</html>
