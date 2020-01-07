@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>表格和按钮</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:50px" class="table-responsive">
+	
+
+<!-- <table class="table table-striped"> -->		<!-- table-striped：行产生一行隔一行加单色背景效果 -->		
+<!-- <table class="table table-bordered"> -->		<!-- table-bordered:给表格增加边框 -->
+<!-- <tr class="sr-only"> -->
+<table class="table table-hover">  			      
+	<thead>
+		<tr>                         	 	<!-- 行标签 -->           
+			<th>编号</th>       			<!-- 列标签 -->       
+			<th>姓名</th>
+			<th>性别</th>
+			<th>年龄</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>张三</td>
+			<td>男</td>
+			<td>50</td>
+		</tr>
+		<tr class="info">
+			<td>2</td>
+			<td>李四</td>
+			<td>女</td>
+			<td>48</td>
+		</tr>
+		<tr class="success">
+			<td>3</td>
+			<td>王五</td>
+			<td>男</td>
+			<td>52</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>马六</td>
+			<td>男</td>
+			<td>55</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<a href="###" class="btn btn-default">Link</a>					<!-- 转化成普通按钮 -->
+<input type="button" class="btn btn-default" value="Input">		<!-- 转化成普通按钮 -->
+<button class="btn btn-default">Button</button>					<!-- 转化成普通按钮 -->
+<button class="btn btn-success">Button</button>
+<button class="btn btn-info">Button</button>
+<button class="btn btn-info btn-lg">Button</button>				<!-- 大号按钮lg -->
+<button class="btn btn-info btn-sm">Button</button>				<!-- 小号按钮sm -->
+<button class="btn btn-info btn-xs">Button</button>				<!-- 特小号按钮xs -->
+<button class="btn btn-info btn-block active">Button</button>	<!-- active点进去内部有阴影 -->
+<button class="btn btn-info btn-block disabled">Button</button>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
